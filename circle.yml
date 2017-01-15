@@ -1,6 +1,6 @@
 test:
  pre:
-   - mvn install -DskipITs
+   - mvn install -DskipTests
  post:
    - mkdir -p $CIRCLE_TEST_REPORTS/junit/
    - find . -type f -regex ".*/target/surefire-reports/.*xml" -exec cp {} $CIRCLE_TEST_REPORTS/junit/ \;
