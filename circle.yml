@@ -1,8 +1,5 @@
-compile:
- pre:
-   - mvn install -Dmaven.test.skip=true
 test:
- pre:
+ override:
    - mvn install -DskipTests
    - mvn install -DskipITs
  post:
